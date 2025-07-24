@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
 
 *,
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
@@ -19,7 +19,7 @@ body {
 
 /* === HEADER & NAVIGATION === */
 header {
-  background-color: #004d40;
+  background-color: #2a4d9b;
   color: white;
   position: sticky;
   top: 0;
@@ -38,7 +38,7 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #004d40;
+  background-color: #2a4d9b;
 }
 
 nav ul li {
@@ -56,33 +56,21 @@ nav ul li a {
   text-decoration: none;
   border-radius: 6px;
   box-sizing: border-box;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav ul li a:hover,
-nav ul li a:focus {
-  background-color: #ffffff;
-  color: #004d40;
-}
-
-nav ul li a.active {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-bottom: 2px solid white;
-}
-
-/* === Enhanced Nav Link Hover Animation === */
-nav ul li a {
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
   background-color: #ffffff;
-  color: #004d40;
+  color: #2a4d9b;
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 77, 64, 0.2);
+  box-shadow: 0 4px 8px rgba(42, 77, 155, 0.2);
 }
 
+nav ul li a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid white;
+}
 
 /* === MAIN CONTENT === */
 main {
@@ -94,7 +82,7 @@ main {
 
 .section-title {
   text-align: center;
-  color: #004d40;
+  color: #2a4d9b;
   margin-bottom: 2.5rem;
   font-size: 2.2rem;
   font-weight: 700;
@@ -104,17 +92,17 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 2rem;
-  perspective: 1000px; /* 👈 ADD perspective here */
+  perspective: 1000px;
 }
 
 /* === PROJECT CARD === */
 .project-card {
-  background: linear-gradient(to bottom, #ffffff, #f2fdfb);
+  background: linear-gradient(to bottom, #ffffff, #f5f9ff);
   padding: 1.75rem;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.07);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform-style: preserve-3d; /* 👈 KEEP */
+  transform-style: preserve-3d;
   will-change: transform;
   position: relative;
   overflow: hidden;
@@ -124,10 +112,9 @@ main {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
-
 .project-card h2 {
   font-size: 1.35rem;
-  color: #004d40;
+  color: #2a4d9b;
   margin-bottom: 0.75rem;
 }
 
@@ -137,7 +124,7 @@ main {
 }
 
 .project-card a {
-  color: #00796b;
+  color: #1e2f57;
   font-weight: 600;
   text-decoration: none;
   margin-right: 1rem;
@@ -159,11 +146,17 @@ main {
 
 .tech-icon {
   font-size: 1rem;
-  background-color: #e0f2f1;
-  color: #004d40;
+  background-color: #dbeafe;
+  color: #2a4d9b;
   padding: 0.35rem 0.65rem;
   border-radius: 8px;
   font-weight: 600;
+  transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.tech-icon:hover {
+  transform: scale(1.15) rotate(5deg);
+  background-color: #93c5fd;
 }
 
 /* === HERO & ABOUT === */
@@ -187,12 +180,12 @@ main {
 .hero h1 {
   font-size: 2.2rem;
   margin-top: 1rem;
-  color: #004d40;
+  color: #2a4d9b;
 }
 
 .hero h2 {
   font-weight: 600;
-  color: #00796b;
+  color: #1e2f57;
   font-size: 1.3rem;
 }
 
@@ -205,7 +198,7 @@ main {
 
 /* === BUTTONS === */
 .button {
-  background-color: #004d40;
+  background-color: #2a4d9b;
   color: white;
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
@@ -216,7 +209,7 @@ main {
 }
 
 .button:hover {
-  background-color: #00695c;
+  background-color: #1e2f57;
   transform: scale(1.05);
 }
 
@@ -227,19 +220,19 @@ main {
 
 .social-buttons a {
   margin: 0 12px;
-  color: #004d40;
+  color: #2a4d9b;
   font-size: 1.5rem;
   transition: transform 0.3s;
 }
 
 .social-buttons a:hover {
   transform: scale(1.2);
-  color: #00796b;
+  color: #1e2f57;
 }
 
 /* === FOOTER === */
 footer {
-  background-color: #004d40;
+  background-color: #2a4d9b;
   color: white;
   text-align: center;
   padding: 1rem 0;
@@ -272,23 +265,6 @@ footer {
   }
 }
 
-/* === Animated Tech Icon Hover === */
-.tech-icon {
-  transition: transform 0.4s ease, background-color 0.4s ease;
-  cursor: default;
-}
-
-.tech-icon:hover {
-  transform: scale(1.15) rotate(5deg);
-  background-color: #b2dfdb;
-}
-
-/* === Project Card Enhanced Hover (Breathing Effect) === */
-.project-card:hover {
-  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
-}
-
-
 /* === FILTER BAR === */
 .filter-bar {
   text-align: center;
@@ -305,7 +281,7 @@ footer {
 }
 
 .filter-btn {
-  background-color: #004d40;
+  background-color: #2a4d9b;
   color: white;
   border: none;
   padding: 0.6rem 1.2rem;
@@ -317,10 +293,9 @@ footer {
 }
 
 .filter-btn:hover {
-  background-color: #00695c;
+  background-color: #1e2f57;
   transform: scale(1.05);
 }
-
 
 /* === MOBILE OVERRIDES === */
 @media (max-width: 768px) {
@@ -356,12 +331,13 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 /* === Back to Top Button === */
 #backToTop {
   position: fixed;
   bottom: 30px;
   right: 20px;
-  background-color: #004d40;
+  background-color: #2a4d9b;
   color: white;
   font-size: 1.2rem;
   padding: 0.6rem 0.8rem;
@@ -374,7 +350,7 @@ footer {
 }
 
 #backToTop:hover {
-  background-color: #00695c;
+  background-color: #1e2f57;
   transform: scale(1.1);
 }
 
@@ -384,9 +360,9 @@ nav ul li a i {
   font-size: 1rem;
   vertical-align: middle;
 }
+
 @media (max-width: 768px) {
   nav ul li a i {
     display: none !important;
   }
 }
-
