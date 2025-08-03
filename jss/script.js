@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Highlight active nav link
-    const navLinks = document.querySelectorAll('.nav-link');
-let currentPath = window.location.pathname.split('/').pop();
+  const navLinks = document.querySelectorAll('.nav-link');
+  let path = window.location.pathname.split('/').pop();
 
-// Handle root path (e.g., visiting https://adebolaadesanya.github.io/)
-if (currentPath === '') currentPath = 'index.html';
+  if (!path) path = 'index.html';
 
-navLinks.forEach(link => {
-  const linkHref = link.getAttribute('href');
-  if (linkHref === currentPath || window.location.href.includes(linkHref)) {
-    link.classList.add('active');
-  }
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === path || window.location.href.includes(href)) {
+      link.classList.add('active');
+    }
+  });
 });
+
   
     // Project filtering with input (for pages that have project-filter)
     const input = document.getElementById('project-filter');
@@ -73,5 +73,4 @@ navLinks.forEach(link => {
         card.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
       });
     });
-  });
   
