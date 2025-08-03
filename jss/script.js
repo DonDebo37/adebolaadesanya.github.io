@@ -1,13 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Highlight active nav link
     const navLinks = document.querySelectorAll('.nav-link');
-    const currentPath = window.location.pathname.split('/').pop();
-  
-    navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentPath) {
-        link.classList.add('active');
-      }
-    });
+let currentPath = window.location.pathname.split('/').pop();
+
+// Handle root path (e.g., visiting https://adebolaadesanya.github.io/)
+if (currentPath === '') currentPath = 'index.html';
+
+navLinks.forEach(link => {
+  const linkHref = link.getAttribute('href');
+  if (linkHref === currentPath || window.location.href.includes(linkHref)) {
+    link.classList.add('active');
+  }
+});
   
     // Project filtering with input (for pages that have project-filter)
     const input = document.getElementById('project-filter');
