@@ -67,8 +67,8 @@ nav ul li a:focus {
   box-shadow: 0 4px 8px rgba(42, 77, 155, 0.2);
 }
 
-nav ul li a.active {
-  background-color: #003049; /* or another color of your theme */
+.nav-link.active {
+  background-color: #003049;
   color: white;
   font-weight: bold;
   border-radius: 6px;

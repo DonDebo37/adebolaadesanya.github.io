@@ -1,13 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
   const navLinks = document.querySelectorAll('.nav-link');
-  let path = window.location.pathname.split('/').pop();
-
-  if (!path) path = 'index.html';
 
   navLinks.forEach(link => {
     const href = link.getAttribute('href');
-    if (href === path || window.location.href.includes(href)) {
+    const match = href === currentPath || window.location.href.includes(href);
+    if (match) {
       link.classList.add('active');
+    } else {
+      link.classList.remove('active');
     }
   });
 });
