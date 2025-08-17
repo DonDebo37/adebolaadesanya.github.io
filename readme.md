@@ -97,13 +97,6 @@ GitHub Pages for hosting
 
 GitHub Actions for CI/CD
 
-📸 Screenshots
-
-Homepage preview
-![Homepage Preview](image.png)
-
-Project cards with filtering on Portfolio page
-
 📌 How to Contribute
 
 If you'd like to fork or extend this template for your own DevOps portfolio:
