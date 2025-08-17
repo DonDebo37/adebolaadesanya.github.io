@@ -119,7 +119,3 @@ This project is open-source and available under the MIT License.
 
 Adebola Adesanya
 DevOps Engineer | AWS & Azure | Cloud Automation
-📍 **Visit Portfolio**: [adebolaadesanya.github.io](https://adebolaadesanya.github.io)
-
-
----
