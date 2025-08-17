@@ -81,8 +81,6 @@ No manual build steps required since the project is purely static
 
 🔍 Project Filtering: JavaScript-powered filtering on the portfolio.html page
 
-🌙 Dark Mode Ready: Theme extensibility planned
-
 🧠 DevOps Focus: Projects focus on AWS, Docker, Terraform, EKS, and automation
 
 🛠 Technologies Used
